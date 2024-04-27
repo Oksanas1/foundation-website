@@ -70,10 +70,12 @@ main {
 }
 .logo__img {
   width: 48px;
+  height: 48px;
 }
 @media screen and (min-width: 321px) {
   .logo__img {
     width: 60px;
+    height: 60px;
   }
 }
 .logo__title {

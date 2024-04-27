@@ -20,9 +20,11 @@ main {
 
   &__img {
     width: 48px;
+    height: 48px;
 
     @include responsible {
       width: 60px;
+      height: 60px;
     }
   }
 
