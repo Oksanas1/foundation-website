@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 /* MAIN */
 .headline {
   padding: 0 $padding * 1px 35px;
@@ -18,7 +20,7 @@
 
   &__content {
     @include responsible {
-      width: percentages(750, $size-width); //750px
+      width: math.div(750, $size-width) * 100%; //750px
       position: relative;
       z-index: 10;
     }
@@ -45,7 +47,7 @@
 
     @include responsible {
       margin-top: $unix-top-mobile;
-      width: percentages(450, 750); //450px
+      width: math.div(450, 750) * 100%; //450px
     }
   }
 
@@ -78,7 +80,7 @@
     margin-top: $unix-top-mobile;
 
     @include responsible {
-      width: percentages(795, 1400);
+      width: math.div(795, $max-width) * 100%; //795px
       margin-top: 0;
       position: absolute;
       top: 80px;
@@ -308,13 +310,13 @@
 
   &__img {
     @include responsible {
-      width: percentages(425, 570); //425px
+      width: math.div(425, 570) * 100%; //425px
       display: inline-block;
     }
 
     &_wrap {
       @include responsible {
-        width: percentages(570, $size-width); //570px
+        width: math.div(570, $size-width) * 100%; //570px
         text-align: center;
       }
     }
@@ -335,8 +337,8 @@
     margin-top: $unix-top-mobile;
 
     @include responsible {
-      width: percentages(520, $size-width); //520px
-      margin: 0 percentages(-30, $size-width) 0 0;
+      width: math.div(520, $size-width) * 100%; //520px
+      margin: 0 (math.div(-30, $size-width) * 100%) 0 0;
     }
   }
 
@@ -426,7 +428,7 @@
 
   &__content {
     @include responsible {
-      width: percentages(460, $size-width); //460px
+      width: math.div(460, $size-width) * 100%; //460px
     }
   }
 
@@ -457,7 +459,7 @@
 
     @include responsible {
       margin-top: 0;
-      width: percentages(425, 570); //425px
+      width: math.div(425, 570) * 100%; //425px
       display: inline-block;
     }
 
@@ -502,7 +504,7 @@
       margin-top: $unix-top-mobile;
 
       @include responsible {
-        margin: 0 0 0 percentages($padding, $size-width);
+        margin: 0 0 0 math.div($padding, $size-width) * 100%;
       }
     }
   }
@@ -550,7 +552,7 @@
 
   &__content {
     @include responsible {
-      width: percentages(555, $size-width); //555px
+      width: math.div(555, $size-width) * 100%; //555px
       margin: 0 auto;
     }
   }
@@ -652,7 +654,7 @@
 
   &__item {
     @include responsible {
-      width: percentages(790, $max-width); //790px
+      width: math.div(790, $max-width) * 100%; //790px
       margin: 0 auto;
       text-align: center;
     }
@@ -723,7 +725,7 @@
       position: absolute;
       bottom: 0;
       right: 25px;
-      width: percentages(270, $max-width);
+      width: math.div(270, $max-width) * 100%;
     }
   }
 }
@@ -732,7 +734,7 @@
   padding: 0 $padding * 1px;
 
   @include responsible {
-    width: percentages(750, $max-width); //750px
+    width: math.div(750, $max-width) * 100%; //750px
     margin: 0 auto;
   }
 
@@ -871,7 +873,7 @@
 
   &__inner {
     @include responsible {
-      width: percentages(945, 1370); //945px
+      width: math.div(945, 1370) * 100%; //945px
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -884,13 +886,13 @@
     margin: 0 auto;
 
     @include responsible {
-      width: percentages(270, 945); //270px
+      width: math.div(270, 945) * 100%; //270px
     }
   }
 
   &__content {
     @include responsible {
-      width: percentages(555, 945); //555px
+      width: math.div(555, 945) * 100%; //555px
     }
   }
 
@@ -944,7 +946,7 @@
     }
 
     @include responsible {
-      width: percentages(385, 555); //385px
+      width: math.div(385, 555) * 100%; //385px
     }
   }
 
