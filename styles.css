@@ -902,7 +902,7 @@ main {
 }
 
 .audience {
-  padding: 50px 0;
+  padding: 52px 0 50px;
   background: #edf8fa;
 }
 @media screen and (min-width: 321px) {
@@ -984,6 +984,9 @@ main {
   .audience__item {
     min-width: 260px;
   }
+}
+.audience__item:hover {
+  box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .audience__item + .audience__item {
   margin-top: 15px;

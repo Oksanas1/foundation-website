@@ -537,7 +537,7 @@
 }
 
 .audience {
-  padding: 50px 0;
+  padding: 52px 0 50px;
   background: $color-blue4;
 
   @include responsible {
@@ -619,6 +619,10 @@
 
     @include responsible {
       min-width: 260px;
+    }
+
+    &:hover {
+      box-shadow: 0px 13px 18px 0px #00000026;
     }
 
     & + & {
