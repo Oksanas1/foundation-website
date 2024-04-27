@@ -1,6 +1,6 @@
 /* MAIN */
 .headline {
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 
   @include responsible {
     max-width: 1140px;
@@ -34,6 +34,7 @@
     font-weight: $text-weight-bold;
     line-height: 1;
     letter-spacing: -0.31px;
+    color: $text-color-black1;
 
     @include responsible {
       font-size: 8rem;
@@ -75,7 +76,7 @@
     margin-top: $unix;
 
     @include responsible {
-      margin: 0 0 0 10px;
+      margin: 0 0 0 5px;
     }
   }
 
@@ -561,14 +562,14 @@
   }
 
   &__subtitle {
-    color: $text-color-black3;
+    color: $text-color-black1;
   }
 
   &__description {
     margin-top: 20px;
     font-size: 2.4rem;
     line-height: 34px;
-    color: $text-color-black3;
+    color: $text-color-black1;
 
     @include responsible {
       margin-top: $unix-top-mobile;
