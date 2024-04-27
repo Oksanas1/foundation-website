@@ -128,7 +128,7 @@
   overflow: hidden;
 
   @include responsible {
-    max-width: $size-width;
+    max-width: $size-width * 1px;
     margin: 0 auto;
     padding: $unix-top-mobile $padding * 1px 0;
 
@@ -154,8 +154,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid $color-grey1;
-    border-left: 1px solid $color-grey1;
+    border-bottom: 1px solid $color-grey4;
+    border-left: 1px solid $color-grey4;
 
     @include responsible {
       flex: none;
@@ -215,7 +215,7 @@
       display: flex;
       flex-wrap: wrap;
       line-height: 28px;
-      border-bottom: 1px solid $color-black3;
+      border-bottom: 1px solid $color-grey4;
       cursor: pointer;
 
       &:hover {
@@ -267,7 +267,7 @@
       padding: 40px $padding * 1px;
 
       & + li {
-        border-top: 1px solid $color-grey1;
+        border-top: 1px solid $color-grey4;
       }
     }
 
@@ -525,13 +525,14 @@
       font-weight: $text-weight-bold;
       line-height: 26px;
       color: $text-color-blue1;
+      text-decoration: underline;
     }
   }
 }
 
 .audience {
   padding: 50px 0;
-  background: $color-blue3;
+  background: $color-blue4;
 
   @include responsible {
     padding: 100px 0;
@@ -737,7 +738,7 @@
 
   &__wrap {
     padding: 50px 0;
-    border-top: 1px solid $color-black1;
+    border-top: 1px solid $color-grey4;
 
     @include responsible {
       padding: 105px 0 110px;
@@ -784,8 +785,9 @@
   }
 
   .job {
-    border: 1px solid $color-black1;
+    border: 1px solid $color-grey4;
     border-radius: 8px;
+    overflow: hidden;
     display: flex;
     cursor: pointer;
 
@@ -823,7 +825,7 @@
       margin-top: 20px;
       font-size: 1.6rem;
       line-height: 22px;
-      color: $text-color-black1;
+      color: $text-color-black2;
 
       @include responsible {
         margin-top: 0;
@@ -860,5 +862,111 @@
         display: block;
       }
     }
+  }
+}
+
+.order {
+  padding: 50px $padding * 1px;
+  background: $color-grey2;
+
+  &__inner {
+    @include responsible {
+      width: percentages(945, 1370); //945px
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    width: 200px;
+    margin: 0 auto;
+
+    @include responsible {
+      width: percentages(270, 945); //270px
+    }
+  }
+
+  &__content {
+    @include responsible {
+      width: percentages(555, 945); //555px
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    font-size: 4rem;
+    font-weight: $text-weight-bold;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    text-align: center;
+    color: $text-color-black1;
+
+    @include responsible {
+      margin: 0;
+    }
+  }
+
+  &__description {
+    margin-top: $unix;
+    font-size: 2.2rem;
+    font-weight: $text-weight-normal;
+    line-height: 32px;
+
+    @include responsible {
+      margin-top: 10px;
+      font-size: 2.2rem;
+      font-weight: $text-weight-normal;
+      line-height: 32px;
+    }
+  }
+
+  &__form {
+    margin-top: 80px;
+    font-size: 0;
+
+    @include responsible {
+      margin-top: 25px;
+    }
+  }
+
+  &__email {
+    padding: 0 $padding * 1px;
+    border: 1px solid $color-grey4;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 46px;
+
+    &::placeholder {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    @include responsible {
+      width: percentages(385, 555); //385px
+    }
+  }
+
+  &__btn {
+    margin-top: 10px;
+    width: 100%;
+
+    @include responsible {
+      width: auto;
+      margin: 0 0 0 10px;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    line-height: 22px;
+    color: $text-color-black2;
+  }
+
+  &__text-link {
+    color: $text-color-blue1;
+    text-decoration: underline;
   }
 }

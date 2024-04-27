@@ -1,6 +1,6 @@
 /* FOOTER */
 .footer {
-  max-width: $max-width + $padding * 1px;
+  max-width: $max-width * 1px;
   margin: 0 auto;
 
   &__section-top {
@@ -47,6 +47,7 @@
       font-size: 1.8rem;
       font-weight: $text-weight-normal;
       line-height: 26px;
+      color: $text-color-black2;
     }
   }
 
@@ -67,12 +68,16 @@
 
   &__google {
     max-width: 115px;
+
+    @include responsible {
+      margin-left: 10px;
+    }
   }
 
   .additional-navigation {
     @include responsible {
       width: percentages(560, $size-width); //560px
-      margin-left: percentages(80, $size-width); //80/1140
+      margin-left: percentages(90, $size-width); //80/1140
       display: flex;
       justify-content: space-between;
     }
@@ -105,7 +110,7 @@
     &__link {
       font-size: 1.8rem;
       line-height: 30px;
-      color: $color-black3;
+      color: $text-color-black2;
     }
   }
 
@@ -147,6 +152,7 @@
     &__link {
       font-size: 1.4rem;
       line-height: 22px;
+      color: $text-color-black2;
     }
   }
 
@@ -168,7 +174,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: $text-color-black1;
       line-height: 17px;
     }
   }

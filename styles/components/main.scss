@@ -38,7 +38,7 @@ main {
     display: block;
     font-size: 1.8rem;
     line-height: 25px;
-    color: $text-color-black1;
+    color: $text-color-black2;
     font-weight: $text-weight-normal;
   }
 }
@@ -48,7 +48,7 @@ main {
 }
 
 .horizontal {
-  max-width: $size-width + $padding * 1px;
+  max-width: $size-width * 1px;
   margin: 0 auto;
   padding: 0 $padding * 1px;
 }

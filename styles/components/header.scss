@@ -79,6 +79,8 @@ header {
     }
 
     &__item {
+      line-height: 48px;
+
       & + li {
         margin-left: 45px;
       }
