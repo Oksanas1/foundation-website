@@ -1,5 +1,7 @@
 /* MAIN */
 .headline {
+  padding-bottom: 35px;
+
   @include responsible {
     max-width: 1140px;
     margin: 0 auto;
@@ -17,7 +19,7 @@
   }
 
   &__content {
-    padding: 0 $padding * 1px 35px;
+    padding: 0 $padding * 1px;
 
     @include responsible {
       width: percentages(750, $size-width); //750px
@@ -47,7 +49,7 @@
     line-height: 34px;
 
     @include responsible {
-      margin-top: 35px;
+      margin-top: 40px;
       width: percentages(450, 750); //450px
     }
   }
@@ -56,7 +58,7 @@
     margin-top: $unix-top-mobile;
 
     @include responsible {
-      margin-top: 55px;
+      margin-top: 60px;
     }
 
     .btn {
@@ -84,7 +86,7 @@
       width: percentages(795, $max-width); //795px
       margin-top: 0;
       position: absolute;
-      top: 80px;
+      top: 75px;
       right: 25px;
     }
   }
@@ -558,10 +560,15 @@
     }
   }
 
+  &__subtitle {
+    color: $text-color-black3;
+  }
+
   &__description {
     margin-top: 20px;
     font-size: 2.4rem;
     line-height: 34px;
+    color: $text-color-black3;
 
     @include responsible {
       margin-top: $unix-top-mobile;
@@ -584,6 +591,7 @@
     & + & {
       margin-top: 10px;
       background: $color-white1;
+      color: $color-black2;
 
       @include responsible {
         margin: 0 0 0 10px;
@@ -924,7 +932,6 @@
     line-height: 32px;
 
     @include responsible {
-      margin-top: 10px;
       font-size: 2.2rem;
       font-weight: $text-weight-normal;
       line-height: 32px;
