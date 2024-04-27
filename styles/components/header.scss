@@ -79,10 +79,10 @@ header {
     }
 
     &__item {
-      line-height: 48px;
+      margin-top: $unix;
 
       & + li {
-        margin-left: 45px;
+        margin-left: 55px;
       }
     }
 
