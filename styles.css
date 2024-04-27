@@ -946,6 +946,7 @@ main {
 .audience__btn {
   display: block;
   width: 100%;
+  box-shadow: none;
 }
 @media screen and (min-width: 321px) {
   .audience__btn {
@@ -976,6 +977,7 @@ main {
 .audience__item {
   border-radius: 10px;
   overflow: hidden;
+  min-height: 300px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1019607843);
 }
 @media screen and (min-width: 321px) {
