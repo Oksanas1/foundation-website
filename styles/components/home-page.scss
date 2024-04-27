@@ -893,7 +893,6 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
   }
 
@@ -908,6 +907,7 @@
   &__content {
     @include responsible {
       width: percentages(555, 945); //555px
+      margin-top: 35px;
     }
   }
 

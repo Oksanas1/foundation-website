@@ -1238,7 +1238,6 @@ main {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 .order__img {
@@ -1252,6 +1251,7 @@ main {
 @media screen and (min-width: 321px) {
   .order__content {
     width: 58.7301587302%;
+    margin-top: 35px;
   }
 }
 .order__title {
