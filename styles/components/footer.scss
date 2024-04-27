@@ -1,4 +1,3 @@
-@use 'sass:math';
 /* FOOTER */
 .footer {
   max-width: $max-width * 1px;
@@ -77,8 +76,8 @@
 
   .additional-navigation {
     @include responsible {
-      width: math.div(560, $size-width) * 100%; //560px
-      margin-left: math.div(90, $size-width) * 100%; //80/1140
+      width: percentages(560, $size-width); //560px
+      margin-left: percentages(90, $size-width); //80/1140
       display: flex;
       justify-content: space-between;
     }
@@ -87,7 +86,7 @@
       margin-top: $unix-top-mobile;
 
       @include responsible {
-        width: math.div(265, 560) * 100%; //265px
+        width: percentages(265, 560); //265px
         margin-top: 0;
       }
     }

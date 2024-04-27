@@ -151,7 +151,7 @@ main {
 }
 
 .header {
-  max-width: 1170px;
+  max-width: 1140px;
   margin: 0 auto;
   padding-left: 15px;
   display: flex;
@@ -418,7 +418,9 @@ main {
 }
 @media screen and (min-width: 321px) {
   .headline {
-    padding: 0 15px 125px;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 125px;
   }
 }
 .headline__wrap {
@@ -485,7 +487,7 @@ main {
 }
 @media screen and (min-width: 321px) {
   .headline__btn-more {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 10px;
   }
 }
 .headline__image {
@@ -900,7 +902,7 @@ main {
 }
 @media screen and (min-width: 321px) {
   .audience {
-    padding: 100px 0;
+    padding: 105px 0 110px;
   }
 }
 .audience__inner {
@@ -1214,8 +1216,13 @@ main {
   background: #f4f5f7;
 }
 @media screen and (min-width: 321px) {
+  .order {
+    padding: 70px 15px;
+  }
+}
+@media screen and (min-width: 321px) {
   .order__inner {
-    width: 68.9781021898%;
+    max-width: 1170px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -1228,12 +1235,12 @@ main {
 }
 @media screen and (min-width: 321px) {
   .order__img {
-    width: 28.5714285714%;
+    width: 23.0769230769%;
   }
 }
 @media screen and (min-width: 321px) {
   .order__content {
-    width: 58.7301587302%;
+    width: 47.4358974359%;
   }
 }
 .order__title {
@@ -1248,6 +1255,7 @@ main {
 @media screen and (min-width: 321px) {
   .order__title {
     margin: 0;
+    text-align: left;
   }
 }
 .order__description {

@@ -1,3 +1,9 @@
+@use 'sass:math';
+
+@function percentages($number, $width) {
+  @return math.div($number, $width) * 100%;
+}
+
 $mobile-width: 600px;
 
 @mixin responsible {
