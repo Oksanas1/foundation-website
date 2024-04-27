@@ -1,11 +1,19 @@
 /* MAIN */
 .headline {
-  background: $color-red1;
-  padding: 35px 0;
+  padding: 0 $padding * 1px 35px;
 
   @include responsible {
-    position: relative;
-    padding: 75px 0 125px;
+    padding: 0 $padding * 1px 125px;
+  }
+
+  &__wrap {
+    background: $color-red1;
+    padding-top: 35px;
+
+    @include responsible {
+      padding-top: 75px;
+      position: relative;
+    }
   }
 
   &__content {
@@ -288,14 +296,14 @@
 }
 
 .inbox {
-  @include responsible {
-    display: flex;
-    justify-content: space-between;
-  }
+  padding: 50px 0;
+  background: $color-red2;
 
-  &__wrap {
-    padding: 50px 0;
-    background: $color-red2;
+  &__inner {
+    @include responsible {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__img {
@@ -522,20 +530,20 @@
 }
 
 .audience {
-  text-align: center;
+  padding: 50px 0;
+  background: $color-blue3;
 
   @include responsible {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 100px 0;
   }
 
-  &__wrap {
-    padding: 50px 0;
-    background: $color-blue3;
+  &__inner {
+    text-align: center;
 
     @include responsible {
-      padding: 100px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 

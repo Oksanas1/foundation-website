@@ -4,6 +4,7 @@ header {
     background: $color-red1;
     max-width: $max-width * 1px;
     margin: 0 auto;
+    padding-top: 40px;
   }
 }
 
@@ -15,12 +16,8 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 4px 16px 0px #2c324114;
   position: relative;
-
-  @include responsible {
-    padding: 40px $padding * 1px 0;
-  }
+  box-shadow: 0px 4px 16px 0px #2c324114;
 
   .logo {
     align-items: center;
@@ -30,7 +27,7 @@ header {
     }
 
     &__title {
-      margin-left: 10px;
+      margin-left: 15px;
       font-size: 2rem;
 
       @include responsible {
@@ -83,7 +80,7 @@ header {
 
     &__item {
       & + li {
-        margin-left: 50px;
+        margin-left: 45px;
       }
     }
 

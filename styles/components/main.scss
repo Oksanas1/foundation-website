@@ -19,7 +19,7 @@ main {
   display: flex;
 
   &__img {
-    width: 45px;
+    width: 48px;
 
     @include responsible {
       width: 60px;

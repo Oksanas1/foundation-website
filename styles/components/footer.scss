@@ -1,12 +1,12 @@
 /* FOOTER */
 .footer {
-  max-width: $max-width * 1px;
+  max-width: $max-width + $padding * 1px;
   margin: 0 auto;
 
   &__section-top {
     @include responsible {
       display: flex;
-      padding: 45px $padding * 1px;
+      padding: 45px $padding * 1px 60px;
     }
   }
 
@@ -57,6 +57,7 @@
 
     @include responsible {
       margin-top: 25px;
+      justify-content: flex-start;
     }
   }
 
@@ -71,7 +72,7 @@
   .additional-navigation {
     @include responsible {
       width: percentages(560, $size-width); //560px
-      margin-left: percentages(125, $size-width); //125/1140
+      margin-left: percentages(80, $size-width); //80/1140
       display: flex;
       justify-content: space-between;
     }
@@ -108,7 +109,7 @@
     }
   }
 
-  &__iner {
+  &__inner {
     @include responsible {
       border-top: 1px solid $color-black3;
     }
