@@ -1,0 +1,118 @@
+/* HEADER */
+header {
+  @include responsible {
+    background: $color-red1;
+    max-width: $max-width * 1px;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  max-width: $size-width * 1px;
+  margin: 0 auto;
+  padding-left: $padding * 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 16px 0px #2c324114;
+  position: relative;
+
+  @include responsible {
+    padding: 40px $padding * 1px 0;
+  }
+
+  .logo {
+    align-items: center;
+
+    @include responsible {
+      max-width: 300px;
+    }
+
+    &__title {
+      margin-left: 10px;
+      font-size: 2rem;
+
+      @include responsible {
+        margin-left: $padding * 1px;
+      }
+    }
+
+    &__description {
+      display: none;
+
+      @include responsible {
+        display: block;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  .navigation {
+    .burger {
+      display: block;
+      border-left: 1px solid $color-black2;
+
+      @include responsible {
+        display: none;
+      }
+
+      &__img {
+        padding: 25px 20px;
+      }
+    }
+
+    &__list {
+      display: none;
+
+      @include responsible {
+        display: flex;
+      }
+    }
+
+    .burger-checkbox:checked + .navigation__list {
+      display: flex;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+    }
+
+    &__item {
+      & + li {
+        margin-left: 50px;
+      }
+    }
+
+    &__link {
+      color: $text-color-black1;
+      font-size: 1.8rem;
+      line-height: 25px;
+      font-weight: $text-weight-normal;
+
+      &.active {
+        font-weight: $text-weight-bold;
+      }
+    }
+
+    &__img-arrov {
+      display: inline-block;
+      margin-left: 5px;
+      width: 8px;
+    }
+  }
+
+  &__button {
+    display: none;
+    margin-left: 55px;
+    background: $color-blue1;
+    color: $text-color-white;
+
+    @include responsible {
+      display: block;
+    }
+  }
+}

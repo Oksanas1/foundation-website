@@ -1,0 +1,174 @@
+/* FOOTER */
+.footer {
+  max-width: $max-width * 1px;
+  margin: 0 auto;
+
+  &__section-top {
+    @include responsible {
+      display: flex;
+      padding: 45px $padding * 1px;
+    }
+  }
+
+  &__content {
+    padding: 40px $padding * 1px;
+
+    @include responsible {
+      max-width: 360px;
+      padding: 0;
+    }
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include responsible {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    &__title {
+      margin-top: 20px;
+
+      @include responsible {
+        margin: 0 $padding * 1px;
+      }
+    }
+  }
+
+  &__description {
+    display: none;
+
+    @include responsible {
+      display: block;
+      margin-top: 25px;
+      font-size: 1.8rem;
+      font-weight: $text-weight-normal;
+      line-height: 26px;
+    }
+  }
+
+  &__pay-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $unix-top-mobile;
+
+    @include responsible {
+      margin-top: 25px;
+    }
+  }
+
+  &__aple {
+    max-width: 135px;
+  }
+
+  &__google {
+    max-width: 115px;
+  }
+
+  .additional-navigation {
+    @include responsible {
+      width: percentages(560, $size-width); //560px
+      margin-left: percentages(125, $size-width); //125/1140
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__section {
+      margin-top: $unix-top-mobile;
+
+      @include responsible {
+        width: percentages(265, 560); //265px
+        margin-top: 0;
+      }
+    }
+
+    &__title {
+      font-size: 2.2rem;
+      line-height: 28px;
+      font-weight: $text-weight-bold;
+    }
+
+    &__list {
+      margin-top: $unix;
+    }
+
+    &__item {
+      & + li {
+        margin-top: 10px;
+      }
+    }
+
+    &__link {
+      font-size: 1.8rem;
+      line-height: 30px;
+      color: $color-black3;
+    }
+  }
+
+  &__iner {
+    @include responsible {
+      border-top: 1px solid $color-black3;
+    }
+  }
+
+  &__ground {
+    padding-bottom: 20px;
+
+    @include responsible {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0;
+    }
+  }
+
+  .legalicy {
+    display: flex;
+    margin-top: $unix-top-mobile;
+
+    @include responsible {
+      margin: 0;
+    }
+
+    &__item {
+      @include responsible {
+        line-height: 50px;
+      }
+
+      & + li {
+        margin-left: 20px;
+      }
+    }
+
+    &__link {
+      font-size: 1.4rem;
+      line-height: 22px;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    margin-top: $unix-top-mobile;
+
+    @include responsible {
+      margin: 0;
+    }
+
+    &__item {
+      & + li {
+        margin-left: 20px;
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $text-color-black1;
+      line-height: 17px;
+    }
+  }
+}

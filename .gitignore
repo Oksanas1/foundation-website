@@ -1,0 +1,11 @@
+.eslintrc.js
+.fantasticonrc.js
+.DS_Store
+fonts.scss
+icon.scss
+
+/images
+/icon-fonts-helpers
+/WorkSans
+/fonts
+
