@@ -106,12 +106,12 @@ header {
 
   &__button {
     display: none;
-    margin-left: 55px;
-    background: $color-blue1;
-    color: $text-color-white;
 
     @include responsible {
       display: block;
+      margin-left: 75px;
+      background: $color-blue1;
+      color: $text-color-white;
     }
   }
 }

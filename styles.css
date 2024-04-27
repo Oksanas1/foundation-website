@@ -238,13 +238,13 @@ main {
 }
 .header__button {
   display: none;
-  margin-left: 55px;
-  background: #3040c4;
-  color: #ffffff;
 }
 @media screen and (min-width: 321px) {
   .header__button {
     display: block;
+    margin-left: 75px;
+    background: #3040c4;
+    color: #ffffff;
   }
 }
 
@@ -420,7 +420,7 @@ main {
   .headline {
     max-width: 1140px;
     margin: 0 auto;
-    padding-bottom: 125px;
+    padding: 0 0 125px;
   }
 }
 .headline__wrap {
@@ -902,7 +902,7 @@ main {
 }
 @media screen and (min-width: 321px) {
   .audience {
-    padding: 105px 0 110px;
+    padding: 110px 0;
   }
 }
 .audience__inner {
@@ -922,7 +922,7 @@ main {
   }
 }
 .audience__description {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 2.4rem;
   line-height: 34px;
 }
