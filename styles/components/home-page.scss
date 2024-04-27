@@ -1,11 +1,9 @@
 /* MAIN */
 .headline {
-  padding: 0 $padding * 1px 35px;
-
   @include responsible {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 0 125px;
+    padding-bottom: 125px;
   }
 
   &__wrap {
@@ -19,8 +17,11 @@
   }
 
   &__content {
+    padding: 0 $padding * 1px 35px;
+
     @include responsible {
       width: percentages(750, $size-width); //750px
+      padding: 0;
       position: relative;
       z-index: 10;
     }
@@ -46,7 +47,7 @@
     line-height: 34px;
 
     @include responsible {
-      margin-top: $unix-top-mobile;
+      margin-top: 35px;
       width: percentages(450, 750); //450px
     }
   }
@@ -877,7 +878,7 @@
 
   &__inner {
     @include responsible {
-      //width: percentages(945, 1370); //945px
+      width: percentages(945, 1370); //945px
       max-width: $size-width * 1px;
       margin: 0 auto;
       display: flex;
@@ -888,16 +889,15 @@
 
   &__img {
     width: 200px;
-    margin: 0 auto;
 
     @include responsible {
-      width: percentages(270, 1170); //270px
+      width: percentages(270, 945); //270px
     }
   }
 
   &__content {
     @include responsible {
-      width: percentages(555, 1170); //555px
+      width: percentages(555, 945); //555px
     }
   }
 
