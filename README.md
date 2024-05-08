@@ -1,6 +1,6 @@
 # Project: Price cards
 
-### [Site link](https://oksanas1.github.io/price-card/)
+### [Site link](https://oksanas1.github.io/foundation-website/)
 
 Layout page supports mobile (up-to-320px) and desktop (up-to-1400px) versions.
 
