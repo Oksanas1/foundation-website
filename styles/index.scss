@@ -1,9 +1,143 @@
-@import 'general/reset.scss';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  overflow: hidden;
+}
 
 @import 'general/varibles.scss';
 @import 'general/mixin.scss';
 
-@import 'components/main.scss';
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.3;
+}
+
+main {
+  overflow: hidden;
+  max-width: $max-width * 1px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+
+  &__img {
+    width: 48px;
+    height: 48px;
+
+    @include responsible {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    line-height: 25px;
+    color: $text-color-black1;
+  }
+
+  &__description {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 25px;
+    color: $text-color-black2;
+    font-weight: $text-weight-normal;
+  }
+}
+
+.checkbox-hidden {
+  display: none;
+}
+
+.horizontal {
+  max-width: $size-width * 1px;
+  margin: 0 auto;
+  padding: 0 $padding * 1px;
+}
+
+.btn {
+  min-width: 160px;
+  padding: 0 25px;
+  line-height: 48px;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  font-weight: $text-weight-bold;
+  box-shadow: 0px 1px 3px 0px #0000001a;
+
+  &.primary {
+    background: $color-blue1;
+    color: $text-color-white;
+  }
+
+  &.color {
+    background: $color-white1;
+    color: $text-color-blue1;
+  }
+}
+
+.page-title {
+  font-size: 2.2rem;
+  line-height: 34px;
+  font-weight: $text-weight-bold;
+
+  & + h2 {
+    margin-top: $unix;
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -0.35px;
+    color: $color-black1;
+
+    @include responsible {
+      margin-top: 20px;
+      font-size: 5.6rem;
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+  }
+}
+
 @import 'components/header.scss';
 @import 'components/footer.scss';
 @import 'components/home-page.scss';

@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 *::before,
@@ -5,16 +6,11 @@
   box-sizing: border-box;
 }
 
-body,
 h1,
 h2,
 h3,
 h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+p {
   margin: 0;
 }
 
@@ -27,27 +23,21 @@ ol {
 
 a {
   text-decoration: none;
-  color: inherit;
-  color: currentColor;
-  cursor: pointer;
 }
 
-img,
-picture {
+img {
   max-width: 100%;
   display: block;
 }
 
 input,
-button,
-textarea,
-select {
+button {
   border: none;
-  font: inherit;
 }
 
 button {
   cursor: pointer;
+  overflow: hidden;
 }
 
 html {
