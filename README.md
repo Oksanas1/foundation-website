@@ -1,4 +1,4 @@
-# Project: Price cards
+# Project: Foundation
 
 ### [Site link](https://oksanas1.github.io/foundation-website/)
 

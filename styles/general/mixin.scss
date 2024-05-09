@@ -7,7 +7,7 @@
 $mobile-width: 600px;
 
 @mixin responsible {
-  @media screen and (min-width: ($modile-width + 1px)) {
+  @media screen and (min-width: ($mobile-width + 1px)) {
     @content;
   }
 }

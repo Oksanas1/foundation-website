@@ -17,7 +17,6 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  box-shadow: 0px 4px 16px 0px #2c324114;
 
   .logo {
     align-items: center;
@@ -67,6 +66,7 @@ header {
 
       @include responsible {
         display: flex;
+        gap: 55px;
       }
     }
 
@@ -80,10 +80,6 @@ header {
 
     &__item {
       margin-top: $unix;
-
-      & + li {
-        margin-left: 55px;
-      }
     }
 
     &__link {
