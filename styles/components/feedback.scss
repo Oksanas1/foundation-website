@@ -1,0 +1,85 @@
+.feedback {
+  padding: 40px $unix 50px;
+
+  @include responsible {
+    padding: 75px 0;
+    position: relative;
+  }
+
+  &__item {
+    @include responsible {
+      width: percentages(790, 1400); //790px
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    line-height: 30px;
+    color: $text-color-blue1;
+  }
+
+  &__description {
+    margin-top: $unix-top-mobile;
+    padding: 0 20px;
+    font-size: 2.4rem;
+    line-height: 34px;
+    color: $text-color-black1;
+  }
+
+  &__footer {
+    margin-top: $unix-top-mobile;
+    font-size: 1.6rem;
+    line-height: 24px;
+    font-weight: $text-weight-normal;
+    color: $text-color-black1;
+
+    b {
+      display: block;
+      font-weight: $text-weight-bold;
+    }
+  }
+
+  &__pagination_list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__pagination_item {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: $color-black1;
+
+    @include responsible {
+      width: 8px;
+      height: 8px;
+    }
+
+    & + & {
+      margin-left: 20px;
+
+      @include responsible {
+        margin-left: 10px;
+      }
+    }
+
+    &.active {
+      background: $color-blue1;
+    }
+  }
+
+  &__img {
+    margin-top: 40px;
+
+    @include responsible {
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      right: 25px;
+      width: percentages(270, 1400);
+    }
+  }
+}

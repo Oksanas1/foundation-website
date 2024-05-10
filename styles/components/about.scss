@@ -1,0 +1,36 @@
+.about {
+  padding: 45px 0;
+  background: $color-grey2;
+
+  &__inner {
+    @include responsible {
+      display: flex;
+    }
+  }
+
+  .article {
+    & + .article {
+      margin-top: 20px;
+
+      @include responsible {
+        margin: 0 0 0 $unix * 2;
+      }
+    }
+
+    &__title {
+      font-family: Work Sans;
+      font-size: 2.2rem;
+      font-weight: $text-weight-bold;
+      line-height: 32px;
+      color: $text-color-black1;
+    }
+
+    &__description {
+      margin-top: 10px;
+      font-size: 2.2rem;
+      font-weight: $text-weight-normal;
+      line-height: 32px;
+      color: $text-color-black1;
+    }
+  }
+}

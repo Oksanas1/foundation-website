@@ -1,0 +1,118 @@
+.inbox {
+  padding: 50px 0;
+  background: $color-red2;
+
+  &__inner {
+    @include responsible {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    @include responsible {
+      width: percentages(425, 570); //425px
+      display: inline-block;
+    }
+
+    &_wrap {
+      @include responsible {
+        width: percentages(570, 1170); //570px
+        text-align: center;
+      }
+    }
+  }
+
+  &__comment {
+    display: none;
+
+    @include responsible {
+      margin-top: $unix;
+      font-size: 1.4rem;
+      line-height: 22px;
+      color: $color-black1;
+    }
+  }
+
+  &__content {
+    margin-top: $unix-top-mobile;
+
+    @include responsible {
+      width: percentages(520, 1170); //520px
+      margin: 0 (percentages(-30, 1170)) 0 0;
+    }
+  }
+
+  &__subtitle {
+    color: $text-color-red1;
+
+    @include responsible {
+      padding: 0 $unix * 2;
+    }
+  }
+
+  &__title {
+    @include responsible {
+      margin-top: 20px;
+      padding: 0 30px;
+    }
+  }
+
+  &__description {
+    margin-top: $unix;
+    font-size: 2.4rem;
+    line-height: 34px;
+
+    @include responsible {
+      margin-top: $unix-top-mobile;
+      padding: 0 $unix * 2;
+    }
+  }
+}
+
+.review {
+  margin-top: $unix-top-mobile;
+  padding: $unix * 2 20px;
+  background: $color-white1;
+  border-bottom: 4px solid $color-blue2;
+
+  @include responsible {
+    padding: $unix * 2;
+  }
+
+  &__description {
+    font-size: 2rem;
+    line-height: 28px;
+  }
+
+  &__footer {
+    margin-top: 25px;
+    display: flex;
+  }
+
+  &__img {
+    &_wrap {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    flex: 1 1 0;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.6rem;
+    font-weight: $text-weight-bold;
+    line-height: 22px;
+
+    span {
+      display: block;
+      font-weight: $text-weight-normal;
+    }
+  }
+}

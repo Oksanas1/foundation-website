@@ -1,22 +1,28 @@
-/* HEADER */
-header {
-  @include responsible {
-    background: $color-red1;
-    max-width: $max-width * 1px;
-    margin: 0 auto;
-    padding-top: 40px;
-  }
-}
-
 .header {
-  max-width: 1140px;
+  min-width: 320px;
   margin: 0 auto;
-  padding-left: $padding * 1px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+
+  @include responsible {
+    max-width: $max-width;
+    background: $color-red1;
+  }
+
+  &__inner {
+    max-width: $size-width;
+    margin: 0 auto;
+    padding-left: $unix;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include responsible {
+      max-width: $size-width;
+      margin: 0 auto;
+      padding: 40px $unix 0 $unix * 2;
+    }
+  }
 
   .logo {
     align-items: center;
@@ -30,7 +36,7 @@ header {
       font-size: 2rem;
 
       @include responsible {
-        margin-left: $padding * 1px;
+        margin-left: $unix;
       }
     }
 
@@ -48,16 +54,13 @@ header {
   }
 
   .navigation {
-    .burger {
+    .burger__img {
       display: block;
       border-left: 1px solid $color-black2;
+      padding: 25px 20px;
 
       @include responsible {
         display: none;
-      }
-
-      &__img {
-        padding: 25px 20px;
       }
     }
 

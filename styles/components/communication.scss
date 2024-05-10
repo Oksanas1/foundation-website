@@ -1,0 +1,115 @@
+.communication {
+  padding: 50px $unix;
+
+  @include responsible {
+    padding: 110px $unix;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__content {
+    @include responsible {
+      width: percentages(460, 1170); //460px
+    }
+  }
+
+  &__subtitle {
+    color: $text-color-blue2;
+
+    @include responsible {
+      margin-top: $unix;
+    }
+  }
+
+  &__description {
+    margin-top: $unix;
+    font-size: 2.4rem;
+    line-height: 34px;
+
+    @include responsible {
+      margin-top: $unix-top-mobile;
+    }
+  }
+
+  &__btn {
+    margin-top: $unix-top-mobile;
+  }
+
+  &__img {
+    margin-top: 40px;
+
+    @include responsible {
+      margin-top: 0;
+      width: percentages(425, 570); //425px
+      display: inline-block;
+    }
+
+    &_wrap {
+      @include responsible {
+        width: 50%; //570px
+        text-align: center;
+      }
+    }
+  }
+
+  &__img-comment {
+    margin-top: $unix;
+    font-size: 1.4rem;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  &__list {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: $unix-top-mobile;
+    position: relative;
+
+    @include responsible {
+      margin-top: 20px;
+      padding-top: 40px;
+      display: flex;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 150px;
+      border-top: 1px solid $color-black2;
+    }
+  }
+
+  &__item {
+    & + & {
+      margin-top: $unix-top-mobile;
+
+      @include responsible {
+        margin: 0 0 0 percentages(15, 1170);
+      }
+    }
+  }
+}
+
+.item {
+  &__description {
+    font-size: 1.8rem;
+    font-weight: $text-weight-normal;
+    line-height: 26px;
+
+    strong {
+      font-weight: $text-weight-bold;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: $text-weight-bold;
+    line-height: 26px;
+    color: $text-color-blue1;
+    text-decoration: underline;
+  }
+}

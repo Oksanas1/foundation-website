@@ -1,0 +1,56 @@
+.hiring {
+  padding: 0 $unix;
+
+  @include responsible {
+    width: percentages(750, 1400); //750px
+    margin: 0 auto;
+  }
+
+  &__wrap {
+    padding: 50px 0;
+    border-top: 1px solid $color-grey4;
+
+    @include responsible {
+      padding: 105px 0 110px;
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -0.35px;
+    text-align: center;
+
+    @include responsible {
+      font-size: 5.6rem;
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__description {
+    margin-top: $unix;
+    font-size: 2.4rem;
+    line-height: 34px;
+    text-align: center;
+
+    @include responsible {
+      margin-top: 20px;
+    }
+  }
+
+  &__btn {
+    margin-top: $unix-top-mobile;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 40px;
+
+    @include responsible {
+      margin-top: 110px;
+    }
+  }
+}

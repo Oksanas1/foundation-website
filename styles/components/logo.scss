@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+
+  &__img {
+    width: 48px;
+    height: 48px;
+
+    @include responsible {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    line-height: 25px;
+    color: $text-color-black1;
+  }
+
+  &__description {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 25px;
+    color: $text-color-black2;
+    font-weight: $text-weight-normal;
+  }
+}

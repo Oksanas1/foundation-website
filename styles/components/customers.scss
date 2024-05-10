@@ -1,0 +1,41 @@
+.customers {
+  overflow: hidden;
+
+  @include responsible {
+    max-width: $size-width;
+    margin: 0 auto;
+    padding: $unix-top-mobile $unix 0;
+
+    .audience__wrap + & {
+      padding: 40px $unix 0;
+    }
+  }
+
+  &__list {
+    margin-left: -1px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include responsible {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    flex: 1 1 105px;
+    height: 90px;
+    padding: $unix;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $color-grey4;
+    border-left: 1px solid $color-grey4;
+
+    @include responsible {
+      flex: none;
+      height: 75px;
+      padding: 0;
+      border: none;
+    }
+  }
+}

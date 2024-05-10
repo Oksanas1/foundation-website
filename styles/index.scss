@@ -43,6 +43,7 @@ button {
 
 @import 'general/varibles.scss';
 @import 'general/mixin.scss';
+@import 'components/logo.scss';
 
 html {
   font-size: 10px;
@@ -55,37 +56,9 @@ body {
 
 main {
   overflow: hidden;
-  max-width: $max-width * 1px;
+  max-width: $max-width;
   min-width: 320px;
   margin: 0 auto;
-}
-
-.logo {
-  display: flex;
-
-  &__img {
-    width: 48px;
-    height: 48px;
-
-    @include responsible {
-      width: 60px;
-      height: 60px;
-    }
-  }
-
-  &__title {
-    font-size: 2rem;
-    line-height: 25px;
-    color: $text-color-black1;
-  }
-
-  &__description {
-    display: block;
-    font-size: 1.8rem;
-    line-height: 25px;
-    color: $text-color-black2;
-    font-weight: $text-weight-normal;
-  }
 }
 
 .checkbox-hidden {
@@ -93,9 +66,9 @@ main {
 }
 
 .horizontal {
-  max-width: $size-width * 1px;
+  max-width: $size-width;
   margin: 0 auto;
-  padding: 0 $padding * 1px;
+  padding: 0 $unix;
 }
 
 .btn {
@@ -141,4 +114,14 @@ main {
 
 @import 'components/header.scss';
 @import 'components/footer.scss';
-@import 'components/home-page.scss';
+@import 'components/headline.scss';
+@import 'components/about.scss';
+@import 'components/customers.scss';
+@import 'components/features.scss';
+@import 'components/inbox.scss';
+@import 'components/communication.scss';
+@import 'components/audience.scss';
+@import 'components/feedback.scss';
+@import 'components/hiring.scss';
+@import 'components/job.scss';
+@import 'components/order.scss';

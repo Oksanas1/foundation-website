@@ -1,0 +1,91 @@
+.job {
+  border: 1px solid $color-grey4;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+
+  & + & {
+    margin-top: $unix;
+
+    @include responsible {
+      margin-top: 20px;
+    }
+  }
+
+  &__content {
+    flex: 1 1 0;
+    padding: 20px;
+
+    @include responsible {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px;
+    }
+
+    .job:hover & {
+      background: $color-blue1;
+    }
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    line-height: 28px;
+    color: $text-color-black1;
+
+    .job:hover & {
+      color: $color-white1;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: $text-color-black2;
+
+    @include responsible {
+      margin-top: 0;
+    }
+
+    .job:hover & {
+      color: $color-white1;
+    }
+  }
+
+  &__section-arrow {
+    flex: 0 0 50px;
+    background-color: $color-grey3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include responsible {
+      flex: 0 0 65px;
+      background-color: $color-white1;
+    }
+
+    .job:hover & {
+      background: $color-blue1;
+    }
+
+    img {
+      width: 7px;
+    }
+  }
+
+  &__img {
+    .job:hover & {
+      display: none;
+    }
+  }
+
+  &__img-hover {
+    display: none;
+
+    .job:hover & {
+      display: block;
+    }
+  }
+}
