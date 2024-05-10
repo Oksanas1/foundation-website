@@ -1,4 +1,5 @@
 .order {
+  max-width: $max-width;
   padding: 50px $unix;
   background: $color-grey2;
 
@@ -8,7 +9,7 @@
 
   &__inner {
     @include responsible {
-      width: percentages(945, 1170); //945px
+      width: percentages(945, 1370); //945px
       max-width: $size-width;
       margin: 0 auto;
       display: flex;

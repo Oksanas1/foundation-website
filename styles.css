@@ -132,16 +132,6 @@ main {
 }
 
 .header {
-  min-width: 320px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 601px) {
-  .header {
-    max-width: 1400px;
-    background: #f3c6bd;
-  }
-}
-.header__inner {
   max-width: 1170px;
   margin: 0 auto;
   padding-left: 15px;
@@ -152,10 +142,21 @@ main {
   position: relative;
 }
 @media screen and (min-width: 601px) {
-  .header__inner {
-    max-width: 1170px;
+  .header {
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 40px 15px 0 30px;
+    padding-left: 30px;
+  }
+}
+.header__wrap {
+  min-width: 320px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 601px) {
+  .header__wrap {
+    max-width: 1400px;
+    background: #f3c6bd;
+    padding-top: 40px;
   }
 }
 .header .logo {
@@ -1228,6 +1229,7 @@ main {
 }
 
 .order {
+  max-width: 1400px;
   padding: 50px 15px;
   background: #f4f5f7;
 }
@@ -1238,7 +1240,7 @@ main {
 }
 @media screen and (min-width: 601px) {
   .order__inner {
-    width: 80.7692307692%;
+    width: 68.9781021898%;
     max-width: 1170px;
     margin: 0 auto;
     display: flex;

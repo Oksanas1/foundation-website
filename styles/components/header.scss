@@ -1,26 +1,27 @@
 .header {
-  min-width: 320px;
+  max-width: $size-width;
   margin: 0 auto;
+  padding-left: $unix;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 
   @include responsible {
-    max-width: $max-width;
-    background: $color-red1;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 30px;
   }
 
-  &__inner {
-    max-width: $size-width;
+  &__wrap {
+    min-width: 320px;
     margin: 0 auto;
-    padding-left: $unix;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
 
     @include responsible {
-      max-width: $size-width;
-      margin: 0 auto;
-      padding: 40px $unix 0 $unix * 2;
+      max-width: $max-width;
+      background: $color-red1;
+      padding-top: 40px;
     }
   }
 
