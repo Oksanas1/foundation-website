@@ -145,7 +145,7 @@ main {
   .header {
     max-width: 1140px;
     margin: 0 auto;
-    padding-left: 30px;
+    padding-left: 15px;
   }
 }
 .header__wrap {

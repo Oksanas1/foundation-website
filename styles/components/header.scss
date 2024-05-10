@@ -11,7 +11,7 @@
   @include responsible {
     max-width: 1140px;
     margin: 0 auto;
-    padding-left: 30px;
+    padding-left: $unix;
   }
 
   &__wrap {
