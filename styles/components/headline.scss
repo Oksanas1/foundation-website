@@ -21,7 +21,7 @@
     padding: 0 $unix;
 
     @include responsible {
-      width: percentages(750, 1170); //750px
+      width: percentages(750, 1170);
       padding: 0;
       position: relative;
       z-index: 10;
@@ -47,16 +47,17 @@
     font-size: 2.4rem;
     font-weight: $text-weight-normal;
     line-height: 34px;
+    color: $color-black3;
 
     @include responsible {
       margin-top: 40px;
-      width: percentages(450, 750); //450px
+      width: percentages(450, 750);
     }
   }
 
   &__buttons {
     overflow: hidden;
-    margin-top: 25px;
+    margin-top: $unix;
 
     @include responsible {
       margin: 60px 0 0 -5px;
@@ -78,7 +79,7 @@
     margin-top: $unix-top-mobile;
 
     @include responsible {
-      width: percentages(795, 1400); //795px
+      width: percentages(795, 1400);
       margin-top: 0;
       position: absolute;
       top: 75px;

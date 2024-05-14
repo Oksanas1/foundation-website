@@ -220,8 +220,8 @@ main {
 .navigation__mobile-btn {
   display: block;
   min-width: 60px;
-  border-left: 1px solid #000000;
-  padding: 25px 20px;
+  border-left: 1px solid #cfcecf;
+  padding: 32px 20px;
   background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png) center no-repeat;
 }
 @media screen and (min-width: 601px) {
@@ -449,6 +449,7 @@ main {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 34px;
+  color: #2b292d;
 }
 @media screen and (min-width: 601px) {
   .headline__description {
@@ -458,7 +459,7 @@ main {
 }
 .headline__buttons {
   overflow: hidden;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 @media screen and (min-width: 601px) {
   .headline__buttons {
