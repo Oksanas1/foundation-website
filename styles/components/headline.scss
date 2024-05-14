@@ -7,7 +7,7 @@
     padding-bottom: 125px;
   }
 
-  &__wrap {
+  &_background {
     background: $color-red1;
     padding-top: 35px;
 
@@ -55,26 +55,21 @@
   }
 
   &__buttons {
-    margin-top: $unix-top-mobile;
+    overflow: hidden;
+    margin-top: 25px;
 
     @include responsible {
-      margin-top: 60px;
-    }
-
-    .btn {
-      width: 100%;
-      text-align: center;
-
-      @include responsible {
-        width: auto;
-      }
+      margin: 60px 0 0 -5px;
     }
   }
 
-  &__btn-more {
+  &__button {
+    width: 100%;
+    text-align: center;
     margin-top: $unix;
 
     @include responsible {
+      width: auto;
       margin: 0 0 0 5px;
     }
   }

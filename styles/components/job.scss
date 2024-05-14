@@ -4,13 +4,10 @@
   overflow: hidden;
   display: flex;
   cursor: pointer;
+  margin-top: $unix;
 
-  & + & {
-    margin-top: $unix;
-
-    @include responsible {
-      margin-top: 20px;
-    }
+  @include responsible {
+    margin-top: 20px;
   }
 
   &__content {

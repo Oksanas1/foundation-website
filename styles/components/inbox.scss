@@ -9,17 +9,17 @@
     }
   }
 
+  &__img-wrap {
+    @include responsible {
+      width: percentages(570, 1170);
+      text-align: center;
+    }
+  }
+
   &__img {
     @include responsible {
-      width: percentages(425, 570); //425px
+      width: percentages(425, 570);
       display: inline-block;
-    }
-
-    &_wrap {
-      @include responsible {
-        width: percentages(570, 1170); //570px
-        text-align: center;
-      }
     }
   }
 
@@ -38,7 +38,7 @@
     margin-top: $unix-top-mobile;
 
     @include responsible {
-      width: percentages(520, 1170); //520px
+      width: percentages(520, 1170);
       margin: 0 (percentages(-30, 1170)) 0 0;
     }
   }

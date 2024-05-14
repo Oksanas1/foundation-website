@@ -25,3 +25,47 @@
     font-weight: $text-weight-normal;
   }
 }
+
+.header .logo {
+  align-items: center;
+
+  @include responsible {
+    max-width: 300px;
+  }
+
+  &__title {
+    margin-left: 15px;
+    font-size: 2rem;
+
+    @include responsible {
+      margin-left: $unix;
+    }
+  }
+
+  &__description {
+    display: none;
+
+    @include responsible {
+      display: block;
+    }
+  }
+}
+
+.footer .logo {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include responsible {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  &__title {
+    margin-top: 20px;
+
+    @include responsible {
+      margin: 0 $unix;
+    }
+  }
+}

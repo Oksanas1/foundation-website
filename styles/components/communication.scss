@@ -10,7 +10,7 @@
 
   &__content {
     @include responsible {
-      width: percentages(460, 1170); //460px
+      width: percentages(460, 1170);
     }
   }
 
@@ -32,8 +32,15 @@
     }
   }
 
-  &__btn {
+  &__button {
     margin-top: $unix-top-mobile;
+  }
+
+  &__img-wrap {
+    @include responsible {
+      width: 50%; //570px
+      text-align: center;
+    }
   }
 
   &__img {
@@ -41,15 +48,8 @@
 
     @include responsible {
       margin-top: 0;
-      width: percentages(425, 570); //425px
+      width: percentages(425, 570);
       display: inline-block;
-    }
-
-    &_wrap {
-      @include responsible {
-        width: 50%; //570px
-        text-align: center;
-      }
     }
   }
 

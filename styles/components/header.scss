@@ -14,7 +14,7 @@
     padding-left: $unix;
   }
 
-  &__wrap {
+  &_background {
     min-width: 320px;
     margin: 0 auto;
 
@@ -25,83 +25,8 @@
     }
   }
 
-  .logo {
-    align-items: center;
-
-    @include responsible {
-      max-width: 300px;
-    }
-
-    &__title {
-      margin-left: 15px;
-      font-size: 2rem;
-
-      @include responsible {
-        margin-left: $unix;
-      }
-    }
-
-    &__description {
-      display: none;
-
-      @include responsible {
-        display: block;
-      }
-    }
-  }
-
   &__menu {
     display: flex;
-  }
-
-  .navigation {
-    .burger__img {
-      display: block;
-      border-left: 1px solid $color-black2;
-      padding: 25px 20px;
-
-      @include responsible {
-        display: none;
-      }
-    }
-
-    &__list {
-      display: none;
-
-      @include responsible {
-        display: flex;
-        gap: 55px;
-      }
-    }
-
-    .burger-checkbox:checked + .navigation__list {
-      display: flex;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-    }
-
-    &__item {
-      margin-top: $unix;
-    }
-
-    &__link {
-      color: $text-color-black1;
-      font-size: 1.8rem;
-      line-height: 25px;
-      font-weight: $text-weight-normal;
-
-      &.active {
-        font-weight: $text-weight-bold;
-      }
-    }
-
-    &__img-arrov {
-      display: inline-block;
-      margin-left: 5px;
-      width: 8px;
-    }
   }
 
   &__button {
@@ -113,5 +38,50 @@
       background: $color-blue1;
       color: $text-color-white;
     }
+  }
+}
+
+.navigation {
+  &__mobile-btn {
+    display: block;
+    min-width: 60px;
+    border-left: 1px solid $color-black2;
+    padding: 25px 20px;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png)
+      center no-repeat;
+
+    @include responsible {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @include responsible {
+      display: flex;
+      gap: 55px;
+    }
+  }
+
+  &__item {
+    margin-top: $unix;
+  }
+
+  &__link {
+    color: $text-color-black1;
+    font-size: 1.8rem;
+    line-height: 25px;
+    font-weight: $text-weight-normal;
+  }
+
+  &_active {
+    font-weight: $text-weight-bold;
+  }
+
+  &__img-arrov {
+    display: inline-block;
+    margin-left: 5px;
+    width: 8px;
   }
 }

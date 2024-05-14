@@ -9,7 +9,7 @@
 
   &__inner {
     @include responsible {
-      width: percentages(945, 1370); //945px
+      width: percentages(945, 1370);
       max-width: $size-width;
       margin: 0 auto;
       display: flex;
@@ -21,13 +21,13 @@
     width: 200px;
 
     @include responsible {
-      width: percentages(270, 945); //270px
+      width: percentages(270, 945);
     }
   }
 
   &__content {
     @include responsible {
-      width: percentages(555, 945); //555px
+      width: percentages(555, 945);
       margin-top: 40px;
     }
   }
@@ -81,11 +81,11 @@
     }
 
     @include responsible {
-      width: percentages(385, 555); //385px
+      width: percentages(385, 555);
     }
   }
 
-  &__btn {
+  &__button {
     margin-top: 10px;
     width: 100%;
 

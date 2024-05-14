@@ -1,18 +1,11 @@
 .hiring {
-  padding: 0 $unix;
+  padding: 50px $unix;
+  border-top: 1px solid $color-grey4;
 
   @include responsible {
-    width: percentages(750, 1400); //750px
+    width: percentages(750, 1400);
     margin: 0 auto;
-  }
-
-  &__wrap {
-    padding: 50px 0;
-    border-top: 1px solid $color-grey4;
-
-    @include responsible {
-      padding: 105px 0 110px;
-    }
+    padding: 105px 0 110px;
   }
 
   &__title {
@@ -39,7 +32,7 @@
     }
   }
 
-  &__btn {
+  &__button {
     margin-top: $unix-top-mobile;
     display: inline-block;
     width: 100%;
@@ -47,10 +40,10 @@
   }
 
   &__list {
-    margin-top: 40px;
+    margin-top: 25px;
 
     @include responsible {
-      margin-top: 110px;
+      margin-top: 90px;
     }
   }
 }
