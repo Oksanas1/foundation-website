@@ -51,13 +51,13 @@ button {
   }
 }
 .logo__title {
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 25px;
   color: #2b292d;
 }
 .logo__description {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   line-height: 25px;
   color: #767678;
   font-weight: 400;
@@ -73,7 +73,7 @@ button {
 }
 .header .logo__title {
   margin-left: 15px;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 @media screen and (min-width: 601px) {
   .header .logo__title {
@@ -109,10 +109,6 @@ button {
   }
 }
 
-html {
-  font-size: 10px;
-}
-
 body {
   font-family: "Work Sans", sans-serif;
   line-height: 1.3;
@@ -140,7 +136,7 @@ main {
   padding: 0 25px;
   line-height: 48px;
   border-radius: 3px;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 700;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1019607843);
 }
@@ -154,13 +150,13 @@ main {
 }
 
 .page-title__subtitle {
-  font-size: 2.2rem;
+  font-size: 1.375rem;
   line-height: 34px;
   font-weight: 700;
 }
 .page-title h2 {
   margin-top: 15px;
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 1;
   letter-spacing: -0.35px;
   color: #2c3241;
@@ -168,7 +164,7 @@ main {
 @media screen and (min-width: 601px) {
   .page-title h2 {
     margin-top: 20px;
-    font-size: 5.6rem;
+    font-size: 3.5rem;
     line-height: 1;
     letter-spacing: -0.5px;
   }
@@ -243,7 +239,7 @@ main {
 }
 .navigation__link {
   color: #2b292d;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   line-height: 25px;
   font-weight: 400;
 }
@@ -282,7 +278,7 @@ main {
   .footer__description {
     display: block;
     margin-top: 25px;
-    font-size: 1.8rem;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 26px;
     color: #767678;
@@ -341,7 +337,7 @@ main {
   }
 }
 .additional-navigation__title {
-  font-size: 2.2rem;
+  font-size: 1.375rem;
   line-height: 28px;
   font-weight: 700;
 }
@@ -352,7 +348,7 @@ main {
   margin-top: 10px;
 }
 .additional-navigation__link {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   line-height: 30px;
   color: #767678;
 }
@@ -375,7 +371,7 @@ main {
   margin-left: 20px;
 }
 .legalicy__link {
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: 22px;
   color: #767678;
 }
@@ -431,7 +427,7 @@ main {
   }
 }
 .headline__title {
-  font-size: 5rem;
+  font-size: 3.125rem;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.31px;
@@ -439,14 +435,14 @@ main {
 }
 @media screen and (min-width: 601px) {
   .headline__title {
-    font-size: 8rem;
+    font-size: 5rem;
     line-height: 78px;
     letter-spacing: -0.5px;
   }
 }
 .headline__description {
   margin-top: 25px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 34px;
   color: #2b292d;
@@ -509,14 +505,14 @@ main {
 }
 .about .article__title {
   font-family: Work Sans;
-  font-size: 2.2rem;
+  font-size: 1.375rem;
   font-weight: 700;
   line-height: 32px;
   color: #2b292d;
 }
 .about .article__description {
   margin-top: 10px;
-  font-size: 2.2rem;
+  font-size: 1.375rem;
   font-weight: 400;
   line-height: 32px;
   color: #2b292d;
@@ -590,7 +586,7 @@ main {
 }
 .features-desktop__description {
   margin-top: 30px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 34px;
 }
@@ -616,13 +612,13 @@ main {
 }
 .features-desktop__item_title {
   margin-left: 15px;
-  font-size: 2.2rem;
+  font-size: 1.375rem;
   line-height: 26px;
   color: #2b292d;
 }
 .features-desktop__item_text {
   margin-top: 5px;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   line-height: 26px;
   color: #2b292d;
 }
@@ -653,7 +649,7 @@ main {
 }
 .features-mobile__description {
   margin-top: 15px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   line-height: 34px;
 }
 .features-mobile__img {
@@ -661,7 +657,7 @@ main {
 }
 .features-mobile__footer {
   margin-top: 20px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: 22px;
   text-align: center;
   color: #2c3241;
@@ -695,7 +691,7 @@ main {
 @media screen and (min-width: 601px) {
   .inbox__comment {
     margin-top: 15px;
-    font-size: 1.4rem;
+    font-size: 0.875rem;
     line-height: 22px;
     color: #2c3241;
   }
@@ -725,7 +721,7 @@ main {
 }
 .inbox__description {
   margin-top: 15px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   line-height: 34px;
 }
 @media screen and (min-width: 601px) {
@@ -747,7 +743,7 @@ main {
   }
 }
 .review__description {
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 28px;
 }
 .review__footer {
@@ -767,7 +763,7 @@ main {
   flex: 1 1 0;
   display: inline-block;
   margin-left: 10px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 22px;
 }
@@ -802,7 +798,7 @@ main {
 }
 .communication__description {
   margin-top: 15px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   line-height: 34px;
 }
 @media screen and (min-width: 601px) {
@@ -831,7 +827,7 @@ main {
 }
 .communication__img-comment {
   margin-top: 15px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: 22px;
   text-align: center;
 }
@@ -865,7 +861,7 @@ main {
 }
 
 .item__description {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 26px;
 }
@@ -875,7 +871,7 @@ main {
 .item__link {
   display: inline-block;
   margin-top: 10px;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 26px;
   color: #3040c4;
@@ -912,7 +908,7 @@ main {
 }
 .audience__description {
   margin-top: 20px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   line-height: 34px;
   color: #2b292d;
 }
@@ -982,7 +978,7 @@ main {
   background: #ffffff;
   padding: 20px 20px 30px;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.375rem;
   line-height: 28px;
   color: #2b292d;
   font-weight: 700;
@@ -1018,20 +1014,20 @@ main {
   }
 }
 .feedback__title {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   line-height: 30px;
   color: #3040c4;
 }
 .feedback__description {
   margin-top: 30px;
   padding: 0 20px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   line-height: 34px;
   color: #2b292d;
 }
 .feedback__footer {
   margin-top: 30px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   color: #2b292d;
@@ -1091,21 +1087,21 @@ main {
   }
 }
 .hiring__title {
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 1;
   letter-spacing: -0.35px;
   text-align: center;
 }
 @media screen and (min-width: 601px) {
   .hiring__title {
-    font-size: 5.6rem;
+    font-size: 3.5rem;
     line-height: 1;
     letter-spacing: -0.5px;
   }
 }
 .hiring__description {
   margin-top: 15px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   line-height: 34px;
   text-align: center;
 }
@@ -1158,7 +1154,7 @@ main {
   background: #3040c4;
 }
 .job__title {
-  font-size: 2.2rem;
+  font-size: 1.375rem;
   line-height: 28px;
   color: #2b292d;
 }
@@ -1167,7 +1163,7 @@ main {
 }
 .job__text {
   margin-top: 20px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 22px;
   color: #767678;
 }
@@ -1243,7 +1239,7 @@ main {
 }
 .order__title {
   margin-top: 40px;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.25px;
@@ -1258,7 +1254,7 @@ main {
 }
 .order__description {
   margin-top: 15px;
-  font-size: 2.2rem;
+  font-size: 1.375rem;
   font-weight: 400;
   line-height: 32px;
 }
@@ -1281,11 +1277,11 @@ main {
   padding: 0 15px;
   border: 1px solid #cfcecf;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   line-height: 46px;
 }
 .order__email::placeholder {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   text-align: center;
 }
 @media screen and (min-width: 601px) {
@@ -1305,7 +1301,7 @@ main {
 }
 .order__text {
   margin-top: 10px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: 22px;
   color: #767678;
 }

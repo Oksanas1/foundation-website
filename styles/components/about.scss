@@ -19,7 +19,7 @@
 
     &__title {
       font-family: Work Sans;
-      font-size: 2.2rem;
+      font-size: toRem(22);
       font-weight: $text-weight-bold;
       line-height: 32px;
       color: $text-color-black1;
@@ -27,7 +27,7 @@
 
     &__description {
       margin-top: 10px;
-      font-size: 2.2rem;
+      font-size: toRem(22);
       font-weight: $text-weight-normal;
       line-height: 32px;
       color: $text-color-black1;

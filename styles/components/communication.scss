@@ -24,7 +24,7 @@
 
   &__description {
     margin-top: $unix;
-    font-size: 2.4rem;
+    font-size: toRem(24);
     line-height: 34px;
 
     @include responsible {
@@ -55,7 +55,7 @@
 
   &__img-comment {
     margin-top: $unix;
-    font-size: 1.4rem;
+    font-size: toRem(14);
     line-height: 22px;
     text-align: center;
   }
@@ -94,7 +94,7 @@
 
 .item {
   &__description {
-    font-size: 1.8rem;
+    font-size: toRem(18);
     font-weight: $text-weight-normal;
     line-height: 26px;
 
@@ -106,7 +106,7 @@
   &__link {
     display: inline-block;
     margin-top: 10px;
-    font-size: 1.8rem;
+    font-size: toRem(18);
     font-weight: $text-weight-bold;
     line-height: 26px;
     color: $text-color-blue1;

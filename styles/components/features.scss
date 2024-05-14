@@ -29,7 +29,7 @@
 
     &__description {
       margin-top: $unix-top-mobile;
-      font-size: 2.4rem;
+      font-size: toRem(24);
       font-weight: $text-weight-normal;
       line-height: 34px;
     }
@@ -61,14 +61,14 @@
 
     &__item_title {
       margin-left: $unix;
-      font-size: 2.2rem;
+      font-size: toRem(22);
       line-height: 26px;
       color: $text-color-black1;
     }
 
     &__item_text {
       margin-top: 5px;
-      font-size: 1.8rem;
+      font-size: toRem(18);
       line-height: 26px;
       color: $text-color-black1;
     }
@@ -105,7 +105,7 @@
 
     &__description {
       margin-top: $unix;
-      font-size: 2.4rem;
+      font-size: toRem(24);
       line-height: 34px;
     }
 
@@ -115,7 +115,7 @@
 
     &__footer {
       margin-top: 20px;
-      font-size: 1.4rem;
+      font-size: toRem(14);
       line-height: 22px;
       text-align: center;
       color: $color-black1;

@@ -1,5 +1,9 @@
 @use 'sass:math';
 
+@function toRem($size) {
+  @return math.div($size, $dedualt-site-font) * 1rem;
+}
+
 @function percentages($number, $width) {
   @return math.div($number, $width) * 100%;
 }

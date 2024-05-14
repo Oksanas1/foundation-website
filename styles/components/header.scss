@@ -70,7 +70,7 @@
 
   &__link {
     color: $text-color-black1;
-    font-size: 1.8rem;
+    font-size: toRem(18);
     line-height: 25px;
     font-weight: $text-weight-normal;
   }

@@ -12,14 +12,14 @@
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: toRem(20);
     line-height: 25px;
     color: $text-color-black1;
   }
 
   &__description {
     display: block;
-    font-size: 1.8rem;
+    font-size: toRem(18);
     line-height: 25px;
     color: $text-color-black2;
     font-weight: $text-weight-normal;
@@ -35,7 +35,7 @@
 
   &__title {
     margin-left: 15px;
-    font-size: 2rem;
+    font-size: toRem(20);
 
     @include responsible {
       margin-left: $unix;
