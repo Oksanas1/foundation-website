@@ -1,0 +1,52 @@
+.checkbox-hidden {
+  display: none;
+}
+
+.horizontal {
+  max-width: $size-width;
+  margin: 0 auto;
+  padding: 0 $unix;
+}
+
+.button {
+  min-width: 160px;
+  padding: 0 25px;
+  line-height: 48px;
+  border-radius: 3px;
+  font-size: toRem(18);
+  font-weight: $text-weight-bold;
+  box-shadow: 0px 1px 3px 0px #0000001a;
+
+  &_primary {
+    background: $color-blue1;
+    color: $text-color-white;
+  }
+
+  &_color {
+    background: $color-white1;
+    color: $text-color-blue1;
+  }
+}
+
+.page-title {
+  &__subtitle {
+    font-size: toRem(22);
+    line-height: 34px;
+    font-weight: $text-weight-bold;
+  }
+
+  h2 {
+    margin-top: $unix;
+    font-size: toRem(40);
+    line-height: 1;
+    letter-spacing: -0.35px;
+    color: $color-black1;
+
+    @include responsible {
+      margin-top: 20px;
+      font-size: toRem(56);
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+  }
+}

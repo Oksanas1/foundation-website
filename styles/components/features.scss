@@ -1,124 +1,77 @@
 .features {
+  display: none;
+
   @include responsible {
+    display: block;
+    max-width: $max-width;
+    margin: 0 auto;
     background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hidden-ouch.png)
       left no-repeat;
-    padding: 105px 0 100px;
+    padding: 100px 0 100px 130px;
+    position: relative;
+  }
+
+  &__content {
+    max-width: 460px;
+  }
+
+  &__subtitle {
+    color: $color-green1;
+  }
+
+  &__title {
+    margin-top: 25px;
+  }
+
+  &__description {
+    margin-top: $unix-top-mobile;
+    font-size: toRem(24);
+    font-weight: $text-weight-normal;
+    line-height: 34px;
+  }
+
+  &__list {
+    margin-top: 40px;
+  }
+
+  &__item {
+    padding: 20px 0;
     display: flex;
-  }
+    flex-wrap: wrap;
+    line-height: 28px;
+    border-bottom: 1px solid $color-grey4;
+    cursor: pointer;
 
-  &__desctop-section {
-    display: none;
+    &:hover {
+      border-bottom: 1px solid $color-blue1;
 
-    @include responsible {
-      display: block;
-    }
-  }
-
-  &-desktop {
-    &__content {
-      max-width: 460px;
-    }
-
-    &__subtitle {
-      color: $color-green1;
-    }
-
-    &__title {
-      margin-top: 25px;
-    }
-
-    &__description {
-      margin-top: $unix-top-mobile;
-      font-size: toRem(24);
-      font-weight: $text-weight-normal;
-      line-height: 34px;
-    }
-
-    &__list {
-      margin-top: 40px;
-    }
-
-    &__item {
-      padding: 20px 0;
-      display: flex;
-      flex-wrap: wrap;
-      line-height: 28px;
-      border-bottom: 1px solid $color-grey4;
-      cursor: pointer;
-
-      &:hover {
-        border-bottom: 1px solid $color-blue1;
-
-        .features-desctop__item_title {
-          color: $text-color-blue1;
-        }
+      .features-desctop__item_title {
+        color: $text-color-blue1;
       }
     }
-
-    &__item_img-icon {
-      display: inline-block;
-    }
-
-    &__item_title {
-      margin-left: $unix;
-      font-size: toRem(22);
-      line-height: 26px;
-      color: $text-color-black1;
-    }
-
-    &__item_text {
-      margin-top: 5px;
-      font-size: toRem(18);
-      line-height: 26px;
-      color: $text-color-black1;
-    }
   }
 
-  &__desctop-img {
-    display: none;
-
-    @include responsible {
-      display: block;
-    }
+  &__img-icon {
+    display: inline-block;
   }
 
-  &__mobile-section {
-    padding: 10px 0;
-
-    @include responsible {
-      display: none;
-    }
+  &__title-item {
+    margin-left: $unix;
+    font-size: toRem(22);
+    line-height: 26px;
+    color: $text-color-black1;
   }
 
-  &-mobile {
-    &__item {
-      padding: 40px $unix;
+  &__context-item {
+    margin-top: 5px;
+    font-size: toRem(18);
+    line-height: 26px;
+    color: $text-color-black1;
+  }
 
-      & + li {
-        border-top: 1px solid $color-grey4;
-      }
-    }
-
-    &__subtitle {
-      color: $color-green1;
-    }
-
-    &__description {
-      margin-top: $unix;
-      font-size: toRem(24);
-      line-height: 34px;
-    }
-
-    &__img {
-      margin-top: $unix-top-mobile;
-    }
-
-    &__footer {
-      margin-top: 20px;
-      font-size: toRem(14);
-      line-height: 22px;
-      text-align: center;
-      color: $color-black1;
-    }
+  &__desktop-img {
+    position: absolute;
+    left: 50%;
+    top: 100px;
   }
 }

@@ -2,7 +2,7 @@
   max-width: $max-width;
   margin: 0 auto;
 
-  &__section-top {
+  &__top-section {
     @include responsible {
       display: flex;
       padding: 45px $unix 60px;
@@ -49,12 +49,6 @@
 
   &__google-pay {
     max-width: 115px;
-  }
-
-  &__inner {
-    @include responsible {
-      border-top: 1px solid $color-black3;
-    }
   }
 
   &__ground {

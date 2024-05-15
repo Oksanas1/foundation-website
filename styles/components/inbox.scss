@@ -2,16 +2,17 @@
   padding: 50px 0;
   background: $color-red2;
 
-  &__inner {
-    @include responsible {
-      display: flex;
-      justify-content: space-between;
-    }
+  @include responsible {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__img-wrap {
     @include responsible {
-      width: percentages(570, 1170);
+      width: percentages(570, 1200);
       text-align: center;
     }
   }
@@ -27,6 +28,7 @@
     display: none;
 
     @include responsible {
+      display: block;
       margin-top: $unix;
       font-size: toRem(14);
       line-height: 22px;
@@ -38,8 +40,9 @@
     margin-top: $unix-top-mobile;
 
     @include responsible {
-      width: percentages(520, 1170);
-      margin: 0 (percentages(-30, 1170)) 0 0;
+      width: percentages(520, 1200);
+      // margin: 0 (percentages(-30, 1200)) 0 0;
+      margin: 0;
     }
   }
 
@@ -90,16 +93,14 @@
     display: flex;
   }
 
-  &__img {
-    &_wrap {
-      width: 40px;
-      height: 40px;
-      border-radius: 100%;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  &__img-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__title {

@@ -76,13 +76,13 @@
     .job:hover & {
       display: none;
     }
-  }
 
-  &__img-hover {
-    display: none;
+    &_hover {
+      display: none;
 
-    .job:hover & {
-      display: block;
+      .job:hover & {
+        display: block;
+      }
     }
   }
 }

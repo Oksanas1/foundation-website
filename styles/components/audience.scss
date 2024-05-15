@@ -1,30 +1,24 @@
 .audience {
   padding: 52px 0 50px;
   background: $color-blue4;
+  text-align: center;
 
   @include responsible {
-    padding: 110px 0;
-  }
-
-  &__inner {
-    text-align: center;
-
-    @include responsible {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 110px 130px;
   }
 
   &__content {
     @include responsible {
-      width: percentages(555, 1170);
+      width: percentages(555, 1140);
       margin: 0 auto;
     }
   }
 
   &__subtitle {
     color: $text-color-black1;
+    text-align: center;
   }
 
   &__description {
@@ -32,6 +26,7 @@
     font-size: toRem(24);
     line-height: 34px;
     color: $text-color-black1;
+    text-align: center;
 
     @include responsible {
       margin-top: $unix-top-mobile;

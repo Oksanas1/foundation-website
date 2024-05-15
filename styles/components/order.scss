@@ -1,33 +1,26 @@
 .order {
-  max-width: $max-width;
-  padding: 50px $unix;
   background: $color-grey2;
+  padding: 50px $unix;
 
   @include responsible {
-    padding: 70px $unix;
-  }
-
-  &__inner {
-    @include responsible {
-      width: percentages(945, 1370);
-      max-width: $size-width;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-    }
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 70px 225px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__img {
     width: 200px;
 
     @include responsible {
-      width: percentages(270, 945);
+      width: percentages(270, 950);
     }
   }
 
   &__content {
     @include responsible {
-      width: percentages(555, 945);
+      width: percentages(555, 950);
       margin-top: 40px;
     }
   }

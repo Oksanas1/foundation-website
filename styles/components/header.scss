@@ -7,22 +7,13 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  background: $color-white1;
 
   @include responsible {
     max-width: 1140px;
     margin: 0 auto;
     padding-left: $unix;
-  }
-
-  &_background {
-    min-width: 320px;
-    margin: 0 auto;
-
-    @include responsible {
-      max-width: $max-width;
-      background: $color-red1;
-      padding-top: 40px;
-    }
+    background: transparent;
   }
 
   &__menu {

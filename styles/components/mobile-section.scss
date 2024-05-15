@@ -1,0 +1,27 @@
+.mobile-section {
+  @include responsible {
+    display: none;
+  }
+
+  &__subtitle {
+    color: $color-green1;
+  }
+
+  &__description {
+    margin-top: $unix;
+    font-size: toRem(24);
+    line-height: 34px;
+  }
+
+  &__img {
+    margin-top: $unix-top-mobile;
+  }
+
+  &__footer {
+    margin-top: 20px;
+    font-size: toRem(14);
+    line-height: 22px;
+    text-align: center;
+    color: $color-black1;
+  }
+}
