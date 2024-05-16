@@ -35,7 +35,7 @@
   }
 
   &__description {
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: toRem(24);
     font-weight: $text-weight-normal;
     line-height: 34px;
@@ -71,7 +71,7 @@
     margin-top: $unix-top-mobile;
 
     @include responsible {
-      width: percentages(795, 1400);
+      width: percentages(780, 1400);
       margin-top: 0;
       position: absolute;
       bottom: 90px;
