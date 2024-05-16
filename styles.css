@@ -415,6 +415,7 @@ body {
   }
 }
 .headline__title {
+  margin: 0;
   font-size: 3.125rem;
   font-weight: 700;
   line-height: 1;
