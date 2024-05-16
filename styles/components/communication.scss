@@ -38,7 +38,7 @@
 
   &__img-wrap {
     @include responsible {
-      width: 50%; //570px
+      width: 50%;
       text-align: center;
     }
   }
@@ -62,7 +62,7 @@
 
   &__list {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 25px;
     padding-top: $unix-top-mobile;
     position: relative;
 
@@ -70,6 +70,7 @@
       margin-top: 20px;
       padding-top: 40px;
       display: flex;
+      justify-content: space-between;
     }
 
     &::before {
@@ -82,12 +83,11 @@
   }
 
   &__item {
-    & + & {
-      margin-top: $unix-top-mobile;
+    margin-top: $unix-top-mobile;
 
-      @include responsible {
-        margin: 0 0 0 percentages(15, 1170);
-      }
+    @include responsible {
+      margin: 0;
+      width: percentages(360, 1140);
     }
   }
 }

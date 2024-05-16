@@ -1,14 +1,12 @@
 @use 'sass:math';
 
 @function toRem($size) {
-  @return math.div($size, $dedualt-site-font) * 1rem;
+  @return math.div($size, 16) * 1rem;
 }
 
 @function percentages($number, $width) {
   @return math.div($number, $width) * 100%;
 }
-
-$mobile-width: 600px;
 
 @mixin responsible {
   @media screen and (min-width: ($mobile-width + 1px)) {

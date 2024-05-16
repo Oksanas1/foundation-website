@@ -64,10 +64,10 @@
     font-size: toRem(18);
     line-height: 25px;
     font-weight: $text-weight-normal;
-  }
 
-  &_active {
-    font-weight: $text-weight-bold;
+    &_active {
+      font-weight: $text-weight-bold;
+    }
   }
 
   &__img-arrov {

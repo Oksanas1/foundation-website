@@ -1,11 +1,9 @@
 .audience {
-  padding: 52px 0 50px;
+  padding: 52px 15px 50px;
   background: $color-blue4;
   text-align: center;
 
   @include responsible {
-    max-width: $max-width;
-    margin: 0 auto;
     padding: 110px 130px;
   }
 
@@ -59,12 +57,13 @@
   }
 
   &__list {
-    margin-top: 40px;
+    margin-top: 25px;
 
     @include responsible {
       margin-top: 110px;
       display: flex;
       justify-content: space-between;
+      gap: $unix;
     }
   }
 
@@ -73,21 +72,15 @@
     overflow: hidden;
     min-height: 300px;
     box-shadow: 0px 1px 3px 0px #0000001a;
+    margin-top: $unix;
 
     @include responsible {
       min-width: 260px;
+      margin: 0;
     }
 
     &:hover {
       box-shadow: 0px 13px 18px 0px #00000026;
-    }
-
-    & + & {
-      margin-top: $unix;
-
-      @include responsible {
-        margin: 0;
-      }
     }
   }
 

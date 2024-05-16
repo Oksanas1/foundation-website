@@ -1,5 +1,34 @@
-.checkbox-hidden {
-  display: none;
+.main {
+  max-width: $max-width;
+  min-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.top-section {
+  min-width: 320px;
+  margin: 0 auto;
+  background: $color-red1;
+
+  @include responsible {
+    max-width: $max-width;
+    padding-top: 40px;
+    position: relative;
+  }
+}
+
+.acquire-customers {
+  padding: 50px $unix 40px;
+}
+
+.engage-users {
+  padding: 40px $unix;
+  border-top: 1px solid $color-grey4;
+}
+
+.support {
+  padding: 40px $unix 50px;
+  border-top: 1px solid $color-grey4;
 }
 
 .horizontal {

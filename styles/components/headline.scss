@@ -6,7 +6,6 @@
     max-width: 1140px;
     margin: 75px auto 0;
     padding-bottom: 125px;
-    //position: relative;
   }
 
   &__content {
@@ -35,7 +34,7 @@
   }
 
   &__description {
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: toRem(24);
     font-weight: $text-weight-normal;
     line-height: 34px;

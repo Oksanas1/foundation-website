@@ -30,34 +30,15 @@ button {
   overflow: hidden;
 }
 
-@import 'general/varibles.scss';
-@import 'general/mixin.scss';
-@import 'components/logo.scss';
-@import 'components/common.scss';
-
 body {
   font-family: 'Work Sans', sans-serif;
   line-height: 1.3;
 }
 
-main {
-  overflow: hidden;
-  max-width: $max-width;
-  min-width: 320px;
-  margin: 0 auto;
-}
-
-.top-section {
-  min-width: 320px;
-  margin: 0 auto;
-  background: $color-red1;
-
-  @include responsible {
-    max-width: $max-width;
-    padding-top: 40px;
-    position: relative;
-  }
-}
+@import 'general/varibles.scss';
+@import 'general/mixin.scss';
+@import 'components/logo.scss';
+@import 'components/common.scss';
 
 @import 'components/header.scss';
 @import 'components/footer.scss';
@@ -66,21 +47,6 @@ main {
 @import 'components/customers.scss';
 @import 'components/features.scss';
 @import 'components/mobile-section.scss';
-
-.acquire-customers {
-  padding: 50px $unix 40px;
-}
-
-.engage-users {
-  padding: 40px $unix;
-  border-top: 1px solid $color-grey4;
-}
-
-.support {
-  padding: 40px $unix 50px;
-  border-top: 1px solid $color-grey4;
-}
-
 @import 'components/inbox.scss';
 @import 'components/communication.scss';
 @import 'components/audience.scss';
