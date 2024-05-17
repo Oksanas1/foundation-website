@@ -1,4 +1,5 @@
 .mobile-section {
+  padding: $unix;
   @include responsible {
     display: none;
   }
@@ -15,6 +16,7 @@
 
   &__img {
     margin-top: $unix-top-mobile;
+    margin: 0 auto;
   }
 
   &__footer {

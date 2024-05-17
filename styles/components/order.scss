@@ -10,9 +10,11 @@
 
   &__img {
     width: 200px;
+    margin: 0 auto;
 
     @include responsible {
       width: percentages(270, 950);
+      margin: 0;
     }
   }
 

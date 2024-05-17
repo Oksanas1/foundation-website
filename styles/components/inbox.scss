@@ -1,5 +1,5 @@
 .inbox {
-  padding: 50px 0;
+  padding: 50px $unix;
   background: $color-red2;
 
   @include responsible {
@@ -16,9 +16,10 @@
   }
 
   &__img {
+    display: inline-block;
+
     @include responsible {
       width: percentages(425, 570);
-      display: inline-block;
     }
   }
 
@@ -39,7 +40,6 @@
 
     @include responsible {
       width: percentages(520, 1200);
-      // margin: 0 (percentages(-30, 1200)) 0 0;
       margin: 0;
     }
   }
